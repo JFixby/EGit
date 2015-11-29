@@ -6,13 +6,14 @@ import com.jfixby.cmns.api.filesystem.File;
 import com.jfixby.cmns.api.filesystem.LocalFileSystem;
 import com.jfixby.cmns.api.log.L;
 import com.jfixby.cmns.api.path.ChildrenList;
+import com.jfixby.cmns.desktop.DesktopAssembler;
 
 public class FixGitProjects {
 
 	static boolean WRITE_MODE = true;
 
 	public static void main(String[] args) throws IOException {
-		Setup.setup();
+		DesktopAssembler.setup();
 
 		String java_path = "D:\\[DEV]\\[GIT-2]";
 		File git_folder = LocalFileSystem.newFile(java_path);
@@ -41,8 +42,7 @@ public class FixGitProjects {
 		}
 	}
 
-	private static void check(File folder, File project_file)
-			throws IOException {
+	private static void check(File folder, File project_file) throws IOException {
 		String folder_name = folder.getName();
 		String data = project_file.readToString();
 		String NAME_OPEN = "<name>";
