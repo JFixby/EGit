@@ -15,7 +15,7 @@ public class FixGitProjects {
 	public static void main(String[] args) throws IOException {
 		DesktopAssembler.setup();
 
-		String java_path = "D:\\[DEV]\\[GIT-2]";
+		String java_path = "D:\\[DEV]\\[GIT]";
 		File git_folder = LocalFileSystem.newFile(java_path);
 		scanFolder(git_folder);
 
