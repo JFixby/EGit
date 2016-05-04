@@ -6,14 +6,14 @@ import com.jfixby.cmns.api.file.ChildrenList;
 import com.jfixby.cmns.api.file.File;
 import com.jfixby.cmns.api.file.LocalFileSystem;
 import com.jfixby.cmns.api.log.L;
-import com.jfixby.red.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopSetup;
 
 public class AddGitIgnore {
 
 	static boolean WRITE_MODE = true;
 
 	public static void main(String[] args) throws IOException {
-		DesktopAssembler.setup();
+		DesktopSetup.deploy();
 
 		String java_path = "D:\\[DEV]\\[GIT-2]";
 		File git_folder = LocalFileSystem.newFile(java_path);
