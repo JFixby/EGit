@@ -22,7 +22,7 @@ public class AddGitIgnore {
 	}
 
 	private static void scanFolder(File folder) throws IOException {
-		ChildrenList children = folder.listChildren();
+		ChildrenList children = folder.listDirectChildren();
 
 		File git_ignore = children.findChild(".gitignore");
 

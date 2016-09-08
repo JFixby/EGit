@@ -22,7 +22,7 @@ public class FixGitProjects {
 	}
 
 	private static void scanFolder(File folder) throws IOException {
-		ChildrenList children = folder.listChildren();
+		ChildrenList children = folder.listDirectChildren();
 		File project_file = children.findChild(".project");
 		if (project_file != null) {
 			// L.d("found", project_file);

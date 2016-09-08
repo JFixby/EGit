@@ -22,7 +22,7 @@ public class TelegramclassPath {
 	}
 
 	private static void scanFolder (final File folder) throws IOException {
-		final ChildrenList children = folder.listChildren();
+		final ChildrenList children = folder.listDirectChildren();
 		final File project_file = children.findChild(".project");
 		if (project_file != null) {
 			// L.d("found", project_file);

@@ -22,7 +22,7 @@ public class ResetSettings {
     }
 
     private static void scanFolder(File folder) throws IOException {
-	ChildrenList children = folder.listChildren();
+	ChildrenList children = folder.listDirectChildren();
 	File settings_file = children.findChild(".settings");
 	if (settings_file != null) {
 	    // L.d("found", project_file);
