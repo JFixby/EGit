@@ -31,7 +31,7 @@ public class TelegramRename {
 		final String java_output_path = "D:\\[DEV]\\[GIT]\\Telecam";
 		final File ouput_folder = LocalFileSystem.newFile(java_output_path);
 
-		final ChildrenList files_to_delete = ouput_folder.listChildren(file -> {
+		final ChildrenList files_to_delete = ouput_folder.listDirectChildren(file -> {
 			if (file.getName().equals(".git")) {
 				return false;
 			}
