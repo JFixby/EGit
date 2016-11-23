@@ -11,7 +11,7 @@ import com.jfixby.red.desktop.DesktopSetup;
 
 public class FixGitProjects {
 
-	static boolean WRITE_MODE = true;
+	static boolean WRITE_MODE = !true;
 
 	public static void main (final String[] args) throws IOException {
 		DesktopSetup.deploy();
