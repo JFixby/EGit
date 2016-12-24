@@ -3,15 +3,15 @@ package com.jfixby.tool.git.eclipse.name;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.api.collections.Collections;
-import com.jfixby.cmns.api.collections.Map;
-import com.jfixby.cmns.api.desktop.DesktopSetup;
-import com.jfixby.cmns.api.file.File;
-import com.jfixby.cmns.api.file.FileConverter;
-import com.jfixby.cmns.api.file.FolderConverter;
-import com.jfixby.cmns.api.file.LocalFileSystem;
-import com.jfixby.cmns.api.log.L;
-import com.jfixby.cmns.api.util.JUtils;
+import com.jfixby.scarabei.api.collections.Collections;
+import com.jfixby.scarabei.api.collections.Map;
+import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.file.File;
+import com.jfixby.scarabei.api.file.FileConverter;
+import com.jfixby.scarabei.api.file.FolderConverter;
+import com.jfixby.scarabei.api.file.LocalFileSystem;
+import com.jfixby.scarabei.api.log.L;
+import com.jfixby.scarabei.api.util.JUtils;
 
 public class FindTinto {
 
