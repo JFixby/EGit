@@ -3,7 +3,7 @@ package com.jfixby.tool.git.eclipse.name;
 import java.io.IOException;
 
 import com.jfixby.scarabei.api.desktop.DesktopSetup;
-import com.jfixby.scarabei.api.file.ChildrenList;
+import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
 import com.jfixby.scarabei.api.log.L;
@@ -22,7 +22,7 @@ public class ResetSettings {
     }
 
     private static void scanFolder(File folder) throws IOException {
-	ChildrenList children = folder.listDirectChildren();
+	FilesList children = folder.listDirectChildren();
 	File settings_file = children.findChild(".settings");
 	if (settings_file != null) {
 	    // L.d("found", project_file);

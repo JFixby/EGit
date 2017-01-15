@@ -6,7 +6,7 @@ import java.io.IOException;
 import com.jfixby.scarabei.api.collections.Collections;
 import com.jfixby.scarabei.api.collections.Map;
 import com.jfixby.scarabei.api.desktop.DesktopSetup;
-import com.jfixby.scarabei.api.file.ChildrenList;
+import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.FileConverter;
 import com.jfixby.scarabei.api.file.FolderConverter;
@@ -31,7 +31,7 @@ public class TelegramRename {
 		final String java_output_path = "D:\\[DEV]\\[GIT]\\Telecam";
 		final File ouput_folder = LocalFileSystem.newFile(java_output_path);
 
-		final ChildrenList files_to_delete = ouput_folder.listDirectChildren(file -> {
+		final FilesList files_to_delete = ouput_folder.listDirectChildren(file -> {
 			if (file.getName().equals(".git")) {
 				return false;
 			}

@@ -4,7 +4,7 @@ package com.jfixby.tool.git.eclipse.name;
 import java.io.IOException;
 
 import com.jfixby.scarabei.api.desktop.DesktopSetup;
-import com.jfixby.scarabei.api.file.ChildrenList;
+import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
 
@@ -22,7 +22,7 @@ public class TelegramclassPath {
 	}
 
 	private static void scanFolder (final File folder) throws IOException {
-		final ChildrenList children = folder.listDirectChildren();
+		final FilesList children = folder.listDirectChildren();
 		final File project_file = children.findChild(".project");
 		if (project_file != null) {
 			// L.d("found", project_file);
