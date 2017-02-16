@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import com.jfixby.scarabei.api.collections.Collections;
 import com.jfixby.scarabei.api.collections.Map;
-import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ScarabeiDesktop;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.FileConverter;
 import com.jfixby.scarabei.api.file.FolderConverter;
@@ -18,7 +18,7 @@ public class FindTinto {
 	static boolean WRITE_MODE = true;
 
 	public static void main (final String[] args) throws IOException {
-		DesktopSetup.deploy();
+		ScarabeiDesktop.deploy();
 
 		final Map<String, String> termsMapping = Collections.newMap();
 		termsMapping.put("tinto", "telecam");

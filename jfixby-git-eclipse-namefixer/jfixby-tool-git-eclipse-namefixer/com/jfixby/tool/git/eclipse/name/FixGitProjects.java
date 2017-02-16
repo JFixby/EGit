@@ -3,7 +3,7 @@ package com.jfixby.tool.git.eclipse.name;
 
 import java.io.IOException;
 
-import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ScarabeiDesktop;
 import com.jfixby.scarabei.api.file.FilesList;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
@@ -14,7 +14,7 @@ public class FixGitProjects {
 	static boolean WRITE_MODE = true;
 
 	public static void main (final String[] args) throws IOException {
-		DesktopSetup.deploy();
+		ScarabeiDesktop.deploy();
 
 		final String java_path = "D:\\[DEV]\\[GIT]";
 		final File git_folder = LocalFileSystem.newFile(java_path);
